@@ -1,0 +1,192 @@
+.vikramsopener {
+  display: flex; /* Change from grid to flex */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: blue;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background-image: url("./sky.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.vikramsopener2 {
+  font-family: "Times New Roman", serif;
+  font-size: 4.5rem; /* Increased size */
+  font-weight: 500;
+  color: #8000ff;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: 5px;
+  text-align: center; /* Ensures text is centered */
+}
+
+.vikramsopener3 {
+  font-family: "Meow Script", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0033a0;
+  text-shadow: 2px 2px 8px rgba(0, 51, 160, 0.5);
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 10px; /* Adds space between name and text */
+}
+
+/* About Me Section */
+
+/* Heading Styling */
+h2 {
+  font-size: 2.8rem;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0033a0; /* Deep blue for a professional look */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 51, 160, 0.3);
+}
+
+/* Paragraph Styling */
+#about p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  font-family: "Georgia", serif; /* Elegant font choice */
+  line-height: 1.6;
+}
+
+/* List Styling */
+#about ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+#about ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  padding: 8px 0;
+  font-family: "Verdana", sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Profile Image Styling */
+#about img {
+  transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#projects .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+#projects .card {
+  height: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .card-body {
+  flex-grow: 1; /* Fills remaining space, making all cards equal height */
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .btn {
+  margin-top: auto; /* Pushes button to the bottom */
+}
+
+/* Resume Section */
+
+/* Section Titles */
+.resume-section h3 {
+  font-size: 2.8rem; /* Match 'HELLO!!' and 'Projects' */
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #0033a0; /* Deep blue for consistency */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 51, 160, 0.3);
+  text-align: center; /* Center align the text */
+  margin-bottom: 30px; /* Spacing below the heading */
+}
+
+/* Skill Badges */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(180px, 1fr)
+  ); /* Increased min width */
+  gap: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Badge Styling */
+.skill-grid .badge {
+  font-size: 1.1rem; /* Slightly smaller to fit text */
+  padding: 12px 20px; /* Added more padding */
+  border-radius: 8px;
+  white-space: normal; /* Allow text wrapping */
+  text-align: center;
+  word-break: break-word; /* Ensures long words don't overflow */
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Styling for Certifications & Achievements */
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Fix for Full Visibility of Achievement Card */
+.row .col-md-4 .card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .skill-badges {
+    justify-content: center;
+  }
+  .card img {
+    height: auto;
+  }
+}
+
+#contact .card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+#contact .card:hover {
+  transform: translateY(-5px);
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+#contact .btn {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
